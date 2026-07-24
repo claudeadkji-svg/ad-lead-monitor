@@ -1,0 +1,14 @@
+[
+  {
+    "id": "manual-sample-1",
+    "source": "수동 등록",
+    "category": "수동 등록",
+    "title": "(예시) OO브랜드 신규 캠페인 문의 — 이 항목은 manual.json 수정으로 관리합니다",
+    "url": "https://github.com/",
+    "company": "예시 거래처",
+    "description": "GitHub에서 docs/data/manual.json 파일을 수정하면 다음 수집 때 반영됩니다. 이 예시 항목은 삭제하세요.",
+    "email": "contact@example.com",
+    "phone": "02-0000-0000",
+    "posted": ""
+  }
+]

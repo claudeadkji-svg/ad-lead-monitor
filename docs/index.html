@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>AD LEAD MONITOR</title>
+<link rel="stylesheet" href="style.css">
+<script src="config.js"></script>
+</head>
+<body>
+
+<div id="gate">
+  <div class="box">
+    <h1>AD <span style="color:#a6192e">LEAD</span> MONITOR</h1>
+    <p>팀 공용 비밀번호를 입력하세요</p>
+    <input type="password" id="pw" placeholder="비밀번호" autofocus>
+    <button id="pw-btn">접속</button>
+    <div class="err" id="pw-err"></div>
+  </div>
+</div>
+
+<div id="app" style="display:none">
+  <header>
+    <div class="h-top">
+      <h1>AD <span>LEAD</span> MONITOR</h1>
+      <span class="sub">신규 광고주·대행사 영업 리드 데일리 모니터링</span>
+      <span class="gen" id="gen-info"></span>
+    </div>
+    <div class="toolbar">
+      <select id="date-sel" title="조회 날짜"></select>
+      <select id="cat-sel" title="카테고리">
+        <option value="">전체 카테고리</option>
+      </select>
+      <select id="src-sel" title="소스">
+        <option value="">전체 소스</option>
+      </select>
+      <input type="text" id="search" placeholder="검색 (제목·거래처·내용)">
+      <button id="new-only">신규만 보기</button>
+      <button id="dl-sel" class="primary">선택 엑셀 다운로드</button>
+      <button id="dl-all">전체 다운로드</button>
+      <span class="stat" id="stat"></span>
+    </div>
+  </header>
+
+  <main>
+    <div id="sections"></div>
+    <div id="source-status"></div>
+  </main>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
