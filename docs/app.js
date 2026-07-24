@@ -3,15 +3,12 @@
   "use strict";
 
   var CFG = window.SITE_CONFIG || {};
-  var REPO = "claudeadkji-svg/ad-lead-monitor";
-  var STATUS_PATH = "docs/data/status.json";
-  var state = { dates: [], date: null, snapshot: null, newOnly: false, status: {} };
+  var state = { dates: [], date: null, snapshot: null, newOnly: false };
 
   var CAT_ORDER = [
     "정부·공공 입찰", "신규 캠페인·브랜드", "채용공고 리드",
     "업계 협회·뉴스", "기타 뉴스 리드", "수동 등록",
   ];
-  var STATUS_OPTIONS = ["", "컨택예정", "메일발송", "회신받음", "미팅", "보류"];
 
   /* ── 비밀번호 게이트 ─────────────────── */
   function sha256(str) {
@@ -53,17 +50,9 @@
     });
   }
 
-  function loadStatus() {
-    // raw.githubusercontent = 커밋 즉시 반영 (Pages 배포 지연 회피)
-    return fetchJson("https://raw.githubusercontent.com/" + REPO + "/main/" + STATUS_PATH)
-      .catch(function () { return fetchJson("data/status.json"); })
-      .then(function (st) { state.status = st || {}; })
-      .catch(function () { state.status = {}; });
-  }
-
   function init() {
-    Promise.all([fetchJson("data/index.json"), loadStatus()]).then(function (res) {
-      state.dates = res[0].dates || [];
+    fetchJson("data/index.json").then(function (idx) {
+      state.dates = idx.dates || [];
       var sel = document.getElementById("date-sel");
       sel.innerHTML = state.dates.map(function (d, i) {
         return '<option value="' + d + '">' + d + (i === 0 ? " (최신)" : "") + "</option>";
@@ -153,17 +142,6 @@
     return parts.join("<br>") || '<span class="find">—</span>';
   }
 
-  function statusCell(it) {
-    var st = state.status[it.id] || {};
-    var opts = STATUS_OPTIONS.map(function (o) {
-      return '<option value="' + o + '"' + (o === (st.s || "") ? " selected" : "") + ">" +
-        (o || "—") + "</option>";
-    }).join("");
-    var who = st.by ? '<div class="st-by">' + esc(st.by) + " · " + esc(st.at || "") + "</div>" : "";
-    return '<select class="st-sel st-' + (st.s || "none") + '" data-id="' + esc(it.id) + '">' +
-      opts + "</select>" + who;
-  }
-
   function render() {
     var items = filtered();
     var byCat = {};
@@ -179,7 +157,7 @@
         (newCnt ? '<span class="newcnt">신규 ' + newCnt + "건</span>" : "") +
         "</div><table><thead><tr>" +
         '<th class="chk"><input type="checkbox" class="cat-all"></th>' +
-        "<th>제목</th><th>거래처</th><th>소스</th><th>연락처</th><th>상태</th><th>최초 등록</th>" +
+        "<th>제목</th><th>거래처</th><th>소스</th><th>연락처</th><th>최초 등록</th>" +
         "</tr></thead><tbody>" +
         rows.map(function (it) {
           return (
@@ -191,7 +169,6 @@
             '<td class="company" title="' + esc(it.company) + '">' + esc(it.company || "—") + "</td>" +
             '<td class="src">' + esc(it.source) + "</td>" +
             '<td class="contact">' + contactCell(it) + "</td>" +
-            '<td class="status">' + statusCell(it) + "</td>" +
             '<td class="date">' + esc(it.first_seen || "") + "</td></tr>"
           );
         }).join("") +
@@ -216,11 +193,6 @@
         });
       });
     });
-    Array.prototype.forEach.call(document.querySelectorAll(".st-sel"), function (sel) {
-      sel.addEventListener("change", function () {
-        saveStatus(sel.getAttribute("data-id"), sel.value, sel);
-      });
-    });
   }
 
   function renderStatus(snap) {
@@ -232,88 +204,22 @@
       }).join("") + "</ul>";
   }
 
-  /* ── 상태 저장 (GitHub API) ─────────────────── */
-  function ghToken() { return localStorage.getItem("alm_gh_token") || ""; }
-  function ghName() { return localStorage.getItem("alm_gh_name") || "팀원"; }
-
-  function saveStatus(id, value, sel) {
-    if (!ghToken()) {
-      alert("상태를 저장하려면 우측 상단 ⚙ 설정에서 GitHub 토큰을 등록해야 합니다.\n(등록 방법은 설정 창 안내 참고)");
-      openSettings();
-      render();
-      return;
-    }
-    sel.disabled = true;
-    var api = "https://api.github.com/repos/" + REPO + "/contents/" + STATUS_PATH;
-    var headers = {
-      "Authorization": "Bearer " + ghToken(),
-      "Accept": "application/vnd.github+json",
-    };
-    fetch(api + "?ref=main&t=" + Date.now(), { headers: headers })
-      .then(function (r) { if (!r.ok) throw new Error("read " + r.status); return r.json(); })
-      .then(function (file) {
-        var cur = {};
-        try {
-          cur = JSON.parse(decodeURIComponent(escape(atob(file.content.replace(/\n/g, "")))));
-        } catch (e) { cur = {}; }
-        var today = new Date().toISOString().slice(0, 10);
-        if (value) cur[id] = { s: value, by: ghName(), at: today };
-        else delete cur[id];
-        var body = {
-          message: "status: " + (value || "해제") + " by " + ghName(),
-          content: btoa(unescape(encodeURIComponent(JSON.stringify(cur, null, 1)))),
-          sha: file.sha,
-          branch: "main",
-        };
-        return fetch(api, { method: "PUT", headers: headers, body: JSON.stringify(body) });
-      })
-      .then(function (r) {
-        if (!r.ok) throw new Error("write " + r.status);
-        state.status[id] = value ? { s: value, by: ghName(), at: new Date().toISOString().slice(0, 10) } : undefined;
-        if (!value) delete state.status[id];
-        sel.disabled = false;
-        sel.className = "st-sel st-" + (value || "none");
-      })
-      .catch(function (e) {
-        sel.disabled = false;
-        alert("상태 저장 실패: " + e.message + "\n토큰 권한(Contents: Read and write)을 확인하세요.");
-        render();
-      });
-  }
-
-  /* ── 설정 모달 ─────────────────── */
-  function openSettings() {
-    document.getElementById("settings").style.display = "flex";
-    document.getElementById("set-name").value = localStorage.getItem("alm_gh_name") || "";
-    document.getElementById("set-token").value = localStorage.getItem("alm_gh_token") || "";
-  }
-  document.getElementById("settings-btn").addEventListener("click", openSettings);
-  document.getElementById("set-save").addEventListener("click", function () {
-    localStorage.setItem("alm_gh_name", document.getElementById("set-name").value.trim());
-    localStorage.setItem("alm_gh_token", document.getElementById("set-token").value.trim());
-    document.getElementById("settings").style.display = "none";
-  });
-  document.getElementById("set-close").addEventListener("click", function () {
-    document.getElementById("settings").style.display = "none";
-  });
-
   /* ── 엑셀 다운로드 ─────────────────── */
   function exportItems(items) {
     if (!items.length) { alert("다운로드할 항목이 없습니다. 체크박스로 선택해 주세요."); return; }
     var rows = items.map(function (it) {
-      var st = state.status[it.id] || {};
       return {
         "날짜": state.date, "카테고리": it.category, "소스": it.source,
         "제목": it.title, "거래처": it.company, "링크": it.url,
         "이메일": it.email, "전화번호": it.phone,
         "설명": it.description, "최초등록일": it.first_seen,
-        "신규": it.is_new ? "NEW" : "", "상태": st.s || "", "담당": st.by || "",
+        "신규": it.is_new ? "NEW" : "",
       };
     });
     var name = "ad_leads_" + state.date;
     if (window.XLSX) {
       var ws = XLSX.utils.json_to_sheet(rows);
-      ws["!cols"] = [{wch:11},{wch:14},{wch:12},{wch:50},{wch:18},{wch:40},{wch:24},{wch:14},{wch:40},{wch:11},{wch:6},{wch:9},{wch:9}];
+      ws["!cols"] = [{wch:11},{wch:14},{wch:12},{wch:50},{wch:18},{wch:40},{wch:24},{wch:14},{wch:40},{wch:11},{wch:6}];
       var wb = XLSX.utils.book_new();
       XLSX.utils.book_append_sheet(wb, ws, "leads");
       XLSX.writeFile(wb, name + ".xlsx");

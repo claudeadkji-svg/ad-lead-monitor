@@ -139,20 +139,6 @@ input[type="checkbox"] { accent-color: var(--accent); cursor: pointer; }
 
 .empty { color: var(--muted); padding: 30px; text-align: center; }
 
-/* ── 리드 상태 ─────────────────────────── */
-td.status { white-space: nowrap; }
-.st-sel {
-  padding: 3px 6px; border-radius: 4px; border: 1px solid var(--border);
-  background: var(--panel2); color: var(--text); font-family: inherit; font-size: 12px;
-  cursor: pointer;
-}
-.st-sel.st-컨택예정 { border-color: #d9a000; color: #ffd600; }
-.st-sel.st-메일발송 { border-color: #4a7edb; color: #7fb3ff; }
-.st-sel.st-회신받음 { border-color: #3a9e5f; color: #6fdb96; }
-.st-sel.st-미팅 { border-color: var(--accent); color: #ff9aa8; font-weight: 700; }
-.st-sel.st-보류 { opacity: 0.55; }
-.st-by { font-size: 10px; color: var(--muted); margin-top: 2px; }
-
 /* ── 주간 리포트 ─────────────────────────── */
 #reports { margin-top: 40px; background: var(--panel); border: 1px solid var(--border); border-radius: 6px; padding: 16px 20px; }
 #reports:empty { display: none; }
@@ -162,33 +148,6 @@ td.status { white-space: nowrap; }
 #reports a { color: #7fb3ff; text-decoration: none; }
 #reports a:hover { text-decoration: underline; }
 
-/* ── 설정 모달 ─────────────────────────── */
-.modal-wrap {
-  position: fixed; inset: 0; z-index: 90; background: rgba(0, 0, 0, 0.6);
-  display: flex; align-items: center; justify-content: center;
-}
-.modal {
-  background: var(--panel); border: 1px solid var(--border); border-top: 3px solid var(--accent);
-  border-radius: 8px; padding: 28px 32px; width: 480px; max-width: 92vw;
-  max-height: 85vh; overflow-y: auto;
-}
-.modal h2 { font-size: 16px; margin-bottom: 10px; }
-.modal p { color: var(--muted); font-size: 12px; margin-bottom: 10px; }
-.modal ol { font-size: 12px; color: var(--muted); padding-left: 18px; margin-bottom: 14px; }
-.modal ol li { margin-bottom: 4px; }
-.modal ol b { color: var(--text); }
-.modal label { display: block; font-size: 12px; color: var(--muted); margin: 10px 0 4px; }
-.modal input {
-  width: 100%; padding: 8px 10px; border-radius: 4px;
-  border: 1px solid var(--border); background: var(--bg); color: var(--text);
-  font-family: inherit; font-size: 13px;
-}
-.modal-btns { display: flex; gap: 8px; margin-top: 18px; }
-.modal-btns button {
-  flex: 1; padding: 9px; border-radius: 4px; border: 1px solid var(--border);
-  background: var(--panel2); color: var(--text); font-family: inherit; font-size: 13px; cursor: pointer;
-}
-.modal-btns button.primary { background: var(--accent); border-color: var(--accent); font-weight: 700; }
 
 @media (max-width: 800px) {
   main { padding: 12px; }

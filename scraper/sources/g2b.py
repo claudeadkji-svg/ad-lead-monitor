@@ -5,10 +5,13 @@
 data.go.kr에서 '조달청_나라장터 입찰공고정보서비스' 활용신청(무료) 후
 발급 키를 GitHub Secrets `NARA_API_KEY`에 등록하면 자동으로 켜집니다.
 """
+import json
 import os
 from datetime import datetime, timedelta, timezone
 
-from common import get, item, load_keywords
+from common import ROOT, get, item, load_keywords
+
+CACHE = os.path.join(ROOT, "docs", "data", "nara_cache.json")
 
 SOURCE = "나라장터"
 CATEGORY = "정부·공공 입찰"
@@ -22,10 +25,20 @@ def keywords():
     return load_keywords().get("나라장터_검색어", ["광고", "홍보", "마케팅"])
 
 
+def from_cache(reason):
+    """API 실패 시 로컬 PC가 커밋해 둔 캐시 사용 (data.go.kr 해외 IP 차단 우회)"""
+    try:
+        with open(CACHE, encoding="utf-8") as f:
+            c = json.load(f)
+        return c.get("items", []), f"캐시 사용: {len(c.get('items', []))}건 (로컬 수집 {c.get('updated', '?')})"
+    except Exception:
+        return [], reason
+
+
 def collect():
     key = os.environ.get("NARA_API_KEY", "").strip()
     if not key:
-        return [], "대기: NARA_API_KEY 미설정 (data.go.kr에서 무료 발급 후 등록하면 자동 활성화)"
+        return from_cache("대기: NARA_API_KEY 미설정 (data.go.kr에서 무료 발급 후 등록하면 자동 활성화)")
 
     kst = timezone(timedelta(hours=9))
     now = datetime.now(kst)
@@ -68,5 +81,6 @@ def collect():
         if it["id"] not in seen:
             seen.add(it["id"])
             uniq.append(it)
-    status = f"성공: {len(uniq)}건" if uniq else ("오류: " + "; ".join(errors) if errors else "성공: 0건")
-    return uniq, status
+    if not uniq and errors:
+        return from_cache("오류: " + "; ".join(errors))
+    return uniq, f"성공: {len(uniq)}건"
