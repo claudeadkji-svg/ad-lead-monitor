@@ -9,7 +9,13 @@ API = ("https://www.wanted.co.kr/api/v4/jobs?country=kr&tag_type_ids=523"
 
 
 def collect():
-    r = get(API, headers={"Accept": "application/json"})
+    r = get(API, headers={
+        "Accept": "application/json",
+        "Referer": "https://www.wanted.co.kr/wdlist/523",
+        "Sec-Fetch-Dest": "empty",
+        "Sec-Fetch-Mode": "cors",
+        "Sec-Fetch-Site": "same-origin",
+    })
     if r.status_code != 200:
         return [], f"오류: HTTP {r.status_code}"
     data = r.json().get("data", [])

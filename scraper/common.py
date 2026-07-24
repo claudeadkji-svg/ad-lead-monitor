@@ -15,7 +15,18 @@ PHONE_RE = re.compile(r"0\d{1,2}[-.\s]?\d{3,4}[-.\s]?\d{4}")
 
 
 def get(url, timeout=25, headers=None, params=None):
-    h = {"User-Agent": UA, "Accept-Language": "ko-KR,ko;q=0.9"}
+    h = {
+        "User-Agent": UA,
+        "Accept-Language": "ko-KR,ko;q=0.9,en;q=0.8",
+        "Accept": "text/html,application/xhtml+xml,application/json;q=0.9,*/*;q=0.8",
+        "Sec-Ch-Ua": '"Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"',
+        "Sec-Ch-Ua-Mobile": "?0",
+        "Sec-Ch-Ua-Platform": '"Windows"',
+        "Sec-Fetch-Dest": "document",
+        "Sec-Fetch-Mode": "navigate",
+        "Sec-Fetch-Site": "none",
+        "Upgrade-Insecure-Requests": "1",
+    }
     if headers:
         h.update(headers)
     try:
