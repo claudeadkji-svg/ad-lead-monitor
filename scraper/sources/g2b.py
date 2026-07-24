@@ -40,6 +40,9 @@ def collect():
                 "inqryDiv": "1", "inqryBgnDt": begin, "inqryEndDt": end,
                 "bidNtceNm": kw, "type": "json",
             }, timeout=30)
+            if r.status_code != 200 or not r.text.lstrip().startswith("{"):
+                errors.append(f"{kw}: HTTP {r.status_code} {r.text.strip()[:80]!r}")
+                continue
             data = r.json()
             rows = (data.get("response", {}).get("body", {}).get("items") or [])
             if isinstance(rows, dict):
