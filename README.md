@@ -12,7 +12,7 @@
 
 | 소스 | 방식 | 상태 |
 |---|---|---|
-| 나라장터 | 공공데이터포털 API | `NARA_API_KEY` Secret 등록 시 활성화 |
+| 나라장터 | 공공데이터포털 API (하이브리드) | 활성. data.go.kr이 해외 IP를 차단하므로 사무실 PC가 매일 06:00에 수집해 `nara_cache.json`으로 푸시(작업 스케줄러 `AdLeadMonitor-NaraCollect`), 06:30 클라우드 수집이 병합. PC가 꺼진 날은 직전 캐시 사용(대시보드에 캐시 시각 표시) |
 | 한국디지털광고협회 | 게시판 크롤링 | 자동 |
 | 모비인사이드 / 매드타임스 | RSS | 자동 |
 | 원티드 | 내부 API (마케팅 직군) | GitHub 서버 IP가 차단되어 클라우드 수집 불가 (로컬 실행 시 수집됨) |
@@ -29,10 +29,15 @@
 ### 수동 리드 추가
 GitHub에서 `docs/data/manual.json`을 수정해 항목 추가 → 다음 수집 때 대시보드에 반영.
 
-### 나라장터 활성화 (권장)
-1. [data.go.kr](https://www.data.go.kr) 가입 → "나라장터 입찰공고정보서비스" 검색 → 활용신청 (무료, 즉시 승인)
-2. 저장소 Settings → Secrets and variables → Actions → `NARA_API_KEY` 등록
-3. 다음 수집부터 광고/홍보/마케팅 입찰공고가 담당자 이메일·전화번호와 함께 수집됨
+### 수집 키워드 변경
+저장소 루트 `keywords.json` 수정 (채용 검색어, 나라장터 검색어, 뉴스 키워드). 코드 지식 불필요.
+
+### 아침 슬랙 알림 (선택)
+슬랙에서 Incoming Webhook 생성 → 저장소 Settings → Secrets → `SLACK_WEBHOOK_URL` 등록.
+등록하면 매일 수집 직후 신규 리드 요약이 슬랙 채널로 발송됩니다.
+
+### 주간 엑셀 리포트
+매주 월요일 07:00 KST 자동 생성 (`weekly-report` 워크플로) → 대시보드 하단에서 다운로드.
 
 ### 즉시 수집 실행
 Actions 탭 → daily-collect → Run workflow
