@@ -37,16 +37,16 @@ def main():
             "items": items,
         }, f, ensure_ascii=False, indent=1)
 
-    def run(*args):
+    def run(*args, quiet=False):
         r = subprocess.run(["git", "-C", ROOT] + list(args),
                            capture_output=True, text=True)
-        if r.returncode != 0:
+        if r.returncode != 0 and not quiet:
             print("git", args[0], "실패:", (r.stderr or r.stdout)[:200])
         return r.returncode
 
     run("pull", "--rebase")
     run("add", "docs/data/nara_cache.json")
-    if run("diff", "--cached", "--quiet") != 0:  # 변경 있음
+    if run("diff", "--cached", "--quiet", quiet=True) != 0:  # 변경 있음
         run("commit", "-m", "data: nara cache (local)")
         run("pull", "--rebase")
         run("push")
