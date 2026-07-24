@@ -1,6 +1,6 @@
 {
  "date": "2026-07-24",
- "generated_at": "2026-07-24 18:37 KST",
+ "generated_at": "2026-07-24 18:38 KST",
  "sources": [
   {
    "name": "나라장터",
@@ -19,7 +19,7 @@
   },
   {
    "name": "원티드",
-   "status": "오류: HTTP 403",
+   "status": "오류: HTTP 403 (클라우드 IP 차단 가능 — 로컬 실행 시 수집됨)",
    "count": 0
   },
   {
@@ -1685,11 +1685,11 @@
    "is_new": true
   },
   {
-   "id": "사람인-2d72af32a102",
+   "id": "사람인-8af85e4dc692",
    "source": "사람인",
    "category": "채용공고 리드",
    "title": "[청담April어학원] 교무팀에서 함께 근무하실 정직원 모십니다.",
-   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54559697&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%84%B0&searchType=search&paid_fl=n&search_uuid=81ddebcf-dd13-48d0-b91c-576d3127553a",
+   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54559697&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%84%B0&searchType=search&paid_fl=n&search_uuid=47ec7869-ed55-421f-bd66-146046fd92b2",
    "company": "(주)청담어학원세종",
    "description": "세종특별자치시 경력무관 초대졸↑ 정규직",
    "email": "",
@@ -1699,11 +1699,11 @@
    "is_new": true
   },
   {
-   "id": "사람인-4fcbc7e80694",
+   "id": "사람인-72672754cd01",
    "source": "사람인",
    "category": "채용공고 리드",
    "title": "[BD/과천] 국내 대형바이오제약그룹사 사업제휴 담당",
-   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54559659&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%84%B0&searchType=search&paid_fl=n&search_uuid=81ddebcf-dd13-48d0-b91c-576d3127553a",
+   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54559659&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%84%B0&searchType=search&paid_fl=n&search_uuid=47ec7869-ed55-421f-bd66-146046fd92b2",
    "company": "(주)커리어케어",
    "description": "경기 과천시 경력 3~13년 대졸↑ 정규직",
    "email": "",
@@ -1713,11 +1713,11 @@
    "is_new": true
   },
   {
-   "id": "사람인-b9504fd8046f",
+   "id": "사람인-aed3ba82bb01",
    "source": "사람인",
    "category": "채용공고 리드",
    "title": "[카멜커피] 브랜드 디자이너 모집",
-   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54559657&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%84%B0&searchType=search&paid_fl=n&search_uuid=81ddebcf-dd13-48d0-b91c-576d3127553a",
+   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54559657&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%84%B0&searchType=search&paid_fl=n&search_uuid=47ec7869-ed55-421f-bd66-146046fd92b2",
    "company": "(주)씨엠엘앤코",
    "description": "서울 성동구 경력무관 대졸↑ 정규직",
    "email": "",
@@ -1727,11 +1727,11 @@
    "is_new": true
   },
   {
-   "id": "사람인-201b0c33999e",
+   "id": "사람인-0504dfc69ffc",
    "source": "사람인",
    "category": "채용공고 리드",
    "title": "커피팀버 도담공원점(옥계본점)에서 바리스타 정직원 채용",
-   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54559647&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%84%B0&searchType=search&paid_fl=n&search_uuid=81ddebcf-dd13-48d0-b91c-576d3127553a",
+   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54559647&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%84%B0&searchType=search&paid_fl=n&search_uuid=47ec7869-ed55-421f-bd66-146046fd92b2",
    "company": "커피팀버(주)",
    "description": "경북 구미시 경력1년↑ 학력무관 정규직",
    "email": "",
@@ -1741,11 +1741,11 @@
    "is_new": true
   },
   {
-   "id": "사람인-c5b72c56ec9c",
+   "id": "사람인-1b8008b13ef9",
    "source": "사람인",
    "category": "채용공고 리드",
    "title": "마케팅외계인과 새로운 마케팅 시작을 함께 하실 팀원",
-   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54559611&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%84%B0&searchType=search&paid_fl=n&search_uuid=81ddebcf-dd13-48d0-b91c-576d3127553a",
+   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54559611&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%84%B0&searchType=search&paid_fl=n&search_uuid=47ec7869-ed55-421f-bd66-146046fd92b2",
    "company": "마케팅외계인",
    "description": "서울 강남구 신입·경력 학력무관 정규직",
    "email": "",
@@ -1755,11 +1755,11 @@
    "is_new": true
   },
   {
-   "id": "사람인-271be0ffb76f",
+   "id": "사람인-6d5245f92e47",
    "source": "사람인",
    "category": "채용공고 리드",
    "title": "외국계자동차 Indirect Procurement",
-   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54559602&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%84%B0&searchType=search&paid_fl=n&search_uuid=81ddebcf-dd13-48d0-b91c-576d3127553a",
+   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54559602&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%84%B0&searchType=search&paid_fl=n&search_uuid=47ec7869-ed55-421f-bd66-146046fd92b2",
    "company": "(주)핀커스코리아",
    "description": "서울 강남구 경력 8~12년 대졸↑ 정규직",
    "email": "",
@@ -1769,11 +1769,11 @@
    "is_new": true
   },
   {
-   "id": "사람인-56a30d61972f",
+   "id": "사람인-fc23b8cd127a",
    "source": "사람인",
    "category": "채용공고 리드",
    "title": "[GTOG] 중국 수출 영업(패션/뷰티/식품) 담당자 채용",
-   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54559591&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%84%B0&searchType=search&paid_fl=n&search_uuid=81ddebcf-dd13-48d0-b91c-576d3127553a",
+   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54559591&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%84%B0&searchType=search&paid_fl=n&search_uuid=47ec7869-ed55-421f-bd66-146046fd92b2",
    "company": "(주)지투지인터내셔날",
    "description": "서울 강남구 경력3년↑ 초대졸↑ 정규직",
    "email": "",
@@ -1783,11 +1783,11 @@
    "is_new": true
   },
   {
-   "id": "사람인-ebceac4585f3",
+   "id": "사람인-398d940797b4",
    "source": "사람인",
    "category": "채용공고 리드",
    "title": "[디자이너 채용] 함께 성장할 콘텐츠 디자이너를 모집합니다.",
-   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54559574&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%84%B0&searchType=search&paid_fl=n&search_uuid=81ddebcf-dd13-48d0-b91c-576d3127553a",
+   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54559574&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%84%B0&searchType=search&paid_fl=n&search_uuid=47ec7869-ed55-421f-bd66-146046fd92b2",
    "company": "다산창조의아침미술학원",
    "description": "경기 남양주시 경력무관 초대졸↑ 정규직·파트",
    "email": "",
@@ -1797,11 +1797,11 @@
    "is_new": true
   },
   {
-   "id": "사람인-388566e9d46c",
+   "id": "사람인-efcdfba2ef0d",
    "source": "사람인",
    "category": "채용공고 리드",
    "title": "외국계자동차 Retention Management",
-   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54559564&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%84%B0&searchType=search&paid_fl=n&search_uuid=81ddebcf-dd13-48d0-b91c-576d3127553a",
+   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54559564&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%84%B0&searchType=search&paid_fl=n&search_uuid=47ec7869-ed55-421f-bd66-146046fd92b2",
    "company": "(주)핀커스코리아",
    "description": "서울 강남구 경력 7~12년 대졸↑ 정규직",
    "email": "",
@@ -1811,11 +1811,11 @@
    "is_new": true
   },
   {
-   "id": "사람인-153ac5f4a582",
+   "id": "사람인-33c81846f858",
    "source": "사람인",
    "category": "채용공고 리드",
    "title": "[코스닥상장사] (주)청담글로벌 러시아·CIS 인플루언서 마케팅",
-   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54559559&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%84%B0&searchType=search&paid_fl=n&search_uuid=81ddebcf-dd13-48d0-b91c-576d3127553a",
+   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54559559&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%84%B0&searchType=search&paid_fl=n&search_uuid=47ec7869-ed55-421f-bd66-146046fd92b2",
    "company": "주식회사 청담글로벌",
    "description": "서울 강남구 경력2년↑ 대졸↑ 정규직",
    "email": "",
@@ -1825,11 +1825,11 @@
    "is_new": true
   },
   {
-   "id": "사람인-35cc765d886b",
+   "id": "사람인-9ff3c6b695ef",
    "source": "사람인",
    "category": "채용공고 리드",
    "title": "관급자재 영업 및 대리점 관리 정규직 채용 (남부지사)",
-   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54559553&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%84%B0&searchType=search&paid_fl=n&search_uuid=81ddebcf-dd13-48d0-b91c-576d3127553a",
+   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54559553&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%84%B0&searchType=search&paid_fl=n&search_uuid=47ec7869-ed55-421f-bd66-146046fd92b2",
    "company": "주식회사애니우드",
    "description": "경기 하남시 경력2년↑ 초대졸↑ 정규직",
    "email": "",
@@ -1839,11 +1839,11 @@
    "is_new": true
   },
   {
-   "id": "사람인-f8a008123124",
+   "id": "사람인-e302e98af369",
    "source": "사람인",
    "category": "채용공고 리드",
    "title": "관급자재 영업 및 대리점 관리 정규직 채용 (수도권)",
-   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54559543&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%84%B0&searchType=search&paid_fl=n&search_uuid=81ddebcf-dd13-48d0-b91c-576d3127553a",
+   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54559543&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%84%B0&searchType=search&paid_fl=n&search_uuid=47ec7869-ed55-421f-bd66-146046fd92b2",
    "company": "주식회사애니우드",
    "description": "경기 하남시 경력2년↑ 초대졸↑ 정규직",
    "email": "",
@@ -1853,11 +1853,11 @@
    "is_new": true
   },
   {
-   "id": "사람인-2aced6ee49c3",
+   "id": "사람인-766e90eeb7df",
    "source": "사람인",
    "category": "채용공고 리드",
    "title": "[쿠팡] 광고사업부 아웃바운드 마케팅 컨설턴트 (계약직, 재택)",
-   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54559542&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%84%B0&searchType=search&paid_fl=n&search_uuid=81ddebcf-dd13-48d0-b91c-576d3127553a",
+   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54559542&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%84%B0&searchType=search&paid_fl=n&search_uuid=47ec7869-ed55-421f-bd66-146046fd92b2",
    "company": "쿠팡(주)",
    "description": "서울 광진구 경력무관 대졸↑ 계약직 3,232 만원",
    "email": "",
@@ -1867,11 +1867,11 @@
    "is_new": true
   },
   {
-   "id": "사람인-d145028164c5",
+   "id": "사람인-1d722a21e96b",
    "source": "사람인",
    "category": "채용공고 리드",
    "title": "[미식 플랫폼 메티즌] Business Project Manager",
-   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54559540&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%84%B0&searchType=search&paid_fl=n&search_uuid=81ddebcf-dd13-48d0-b91c-576d3127553a",
+   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54559540&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%84%B0&searchType=search&paid_fl=n&search_uuid=47ec7869-ed55-421f-bd66-146046fd92b2",
    "company": "주식회사 캐비아엠",
    "description": "서울 강남구 경력 5~7년 대졸↑ 정규직",
    "email": "",
@@ -1881,11 +1881,11 @@
    "is_new": true
   },
   {
-   "id": "사람인-34a06622ea84",
+   "id": "사람인-497af0441163",
    "source": "사람인",
    "category": "채용공고 리드",
    "title": "관급자재 영업 및 대리점 관리 정규직 채용 (남부지사)",
-   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54559528&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%84%B0&searchType=search&paid_fl=n&search_uuid=81ddebcf-dd13-48d0-b91c-576d3127553a",
+   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54559528&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%84%B0&searchType=search&paid_fl=n&search_uuid=47ec7869-ed55-421f-bd66-146046fd92b2",
    "company": "(주)이노스",
    "description": "강원 원주시 경력2년↑ 초대졸↑ 정규직",
    "email": "",
@@ -1895,11 +1895,11 @@
    "is_new": true
   },
   {
-   "id": "사람인-c9a3e205487d",
+   "id": "사람인-c9c39fb2c8b6",
    "source": "사람인",
    "category": "채용공고 리드",
    "title": "(주)크레스트인볼브먼트 온라인 마케터 채용",
-   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54559525&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%84%B0&searchType=search&paid_fl=n&search_uuid=81ddebcf-dd13-48d0-b91c-576d3127553a",
+   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54559525&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%84%B0&searchType=search&paid_fl=n&search_uuid=47ec7869-ed55-421f-bd66-146046fd92b2",
    "company": "(주)크레스트인볼브먼트",
    "description": "서울 성동구 경력무관 학력무관 계약직 4,000 만원",
    "email": "",
@@ -1909,11 +1909,11 @@
    "is_new": true
   },
   {
-   "id": "사람인-ad48fc81c35c",
+   "id": "사람인-1543656a2ea8",
    "source": "사람인",
    "category": "채용공고 리드",
    "title": "[채용연계형] 북미 인플루언서 콘텐츠 마케팅 인턴 대규모 채용",
-   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54559519&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%84%B0&searchType=search&paid_fl=n&search_uuid=81ddebcf-dd13-48d0-b91c-576d3127553a",
+   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54559519&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%84%B0&searchType=search&paid_fl=n&search_uuid=47ec7869-ed55-421f-bd66-146046fd92b2",
    "company": "(주)오가닉서라운딩",
    "description": "서울 강남구 경력무관 학력무관 계약직·인턴직",
    "email": "",
@@ -1923,11 +1923,11 @@
    "is_new": true
   },
   {
-   "id": "사람인-44458d83ecf0",
+   "id": "사람인-95fdc27f93ac",
    "source": "사람인",
    "category": "채용공고 리드",
    "title": "㈜이엠넷 영상 콘텐츠 제작팀 실장급 채용(경력)",
-   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54559512&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%84%B0&searchType=search&paid_fl=n&search_uuid=81ddebcf-dd13-48d0-b91c-576d3127553a",
+   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54559512&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%84%B0&searchType=search&paid_fl=n&search_uuid=47ec7869-ed55-421f-bd66-146046fd92b2",
    "company": "㈜이엠넷",
    "description": "서울 구로구 경력10년↑ 대졸↑ 정규직",
    "email": "",
@@ -1937,11 +1937,11 @@
    "is_new": true
   },
   {
-   "id": "사람인-a38064d1c965",
+   "id": "사람인-8b775f7af2a9",
    "source": "사람인",
    "category": "채용공고 리드",
    "title": "(주)힐리오인베스트먼트 PE 투자심사역 경력 채용 공고입니다",
-   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54559511&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%84%B0&searchType=search&paid_fl=n&search_uuid=81ddebcf-dd13-48d0-b91c-576d3127553a",
+   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54559511&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%84%B0&searchType=search&paid_fl=n&search_uuid=47ec7869-ed55-421f-bd66-146046fd92b2",
    "company": "(주)힐리오인베스트먼트",
    "description": "서울 강남구 경력 3~10년 대졸↑ 정규직",
    "email": "",
@@ -1951,11 +1951,11 @@
    "is_new": true
   },
   {
-   "id": "사람인-906cdae12f1c",
+   "id": "사람인-786313133023",
    "source": "사람인",
    "category": "채용공고 리드",
    "title": "관급자재 영업 및 대리점 관리 정규직 채용 (수도권)",
-   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54559507&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%84%B0&searchType=search&paid_fl=n&search_uuid=81ddebcf-dd13-48d0-b91c-576d3127553a",
+   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54559507&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%84%B0&searchType=search&paid_fl=n&search_uuid=47ec7869-ed55-421f-bd66-146046fd92b2",
    "company": "(주)이노스",
    "description": "강원 원주시 경력2년↑ 초대졸↑ 정규직",
    "email": "",
@@ -1965,11 +1965,11 @@
    "is_new": true
   },
   {
-   "id": "사람인-b245e7fb4fa9",
+   "id": "사람인-a6ca24817e78",
    "source": "사람인",
    "category": "채용공고 리드",
    "title": "[덱스레보] 브랜드 디자이너 경력 채용",
-   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54559501&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%84%B0&searchType=search&paid_fl=n&search_uuid=81ddebcf-dd13-48d0-b91c-576d3127553a",
+   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54559501&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%84%B0&searchType=search&paid_fl=n&search_uuid=47ec7869-ed55-421f-bd66-146046fd92b2",
    "company": "(주)덱스레보",
    "description": "서울 강남구 경력 5~10년 대졸↑ 정규직",
    "email": "",
@@ -1979,11 +1979,11 @@
    "is_new": true
   },
   {
-   "id": "사람인-dbec0bb8816d",
+   "id": "사람인-f2a5be753eea",
    "source": "사람인",
    "category": "채용공고 리드",
    "title": "[부동산/임대컨설팅] LM/LR 경력인재 - 프롭테크 우량중견기업",
-   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54559499&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%84%B0&searchType=search&paid_fl=n&search_uuid=81ddebcf-dd13-48d0-b91c-576d3127553a",
+   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54559499&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%84%B0&searchType=search&paid_fl=n&search_uuid=47ec7869-ed55-421f-bd66-146046fd92b2",
    "company": "에스에프인촌(주)",
    "description": "서울 서초구 경력3년↑ 대졸↑ 정규직",
    "email": "",
@@ -1993,11 +1993,11 @@
    "is_new": true
   },
   {
-   "id": "사람인-cb30ea9c6fa0",
+   "id": "사람인-3de766eb90d2",
    "source": "사람인",
    "category": "채용공고 리드",
    "title": "(주)클래스나인 웹 디자이너 정규직 채용",
-   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54559493&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%84%B0&searchType=search&paid_fl=n&search_uuid=81ddebcf-dd13-48d0-b91c-576d3127553a",
+   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54559493&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%84%B0&searchType=search&paid_fl=n&search_uuid=47ec7869-ed55-421f-bd66-146046fd92b2",
    "company": "(주)클래스나인",
    "description": "경남 김해시 경력무관 학력무관 정규직",
    "email": "",
@@ -2007,11 +2007,11 @@
    "is_new": true
   },
   {
-   "id": "사람인-48f7da843f1f",
+   "id": "사람인-0780b5412b4e",
    "source": "사람인",
    "category": "채용공고 리드",
    "title": "(주)리피유 제품개발 PM(기술지원) 채용",
-   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54559464&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%84%B0&searchType=search&paid_fl=n&search_uuid=81ddebcf-dd13-48d0-b91c-576d3127553a",
+   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54559464&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%84%B0&searchType=search&paid_fl=n&search_uuid=47ec7869-ed55-421f-bd66-146046fd92b2",
    "company": "주식회사리피유",
    "description": "대전 유성구 경력무관 초대졸↑ 정규직",
    "email": "",
@@ -2021,11 +2021,11 @@
    "is_new": true
   },
   {
-   "id": "사람인-343996e62010",
+   "id": "사람인-9869bcc86597",
    "source": "사람인",
    "category": "채용공고 리드",
    "title": "[코레이즈] Apple B2B 영업지원 및 인사이드 세일즈 채용(신입)",
-   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54559450&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%84%B0&searchType=search&paid_fl=n&search_uuid=81ddebcf-dd13-48d0-b91c-576d3127553a",
+   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54559450&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%84%B0&searchType=search&paid_fl=n&search_uuid=47ec7869-ed55-421f-bd66-146046fd92b2",
    "company": "(주)코레이즈홀딩스",
    "description": "서울 성동구 경력무관 학력무관 정규직·계약직",
    "email": "",
@@ -2035,11 +2035,11 @@
    "is_new": true
   },
   {
-   "id": "사람인-9f83d2eea4d9",
+   "id": "사람인-a5681c58a445",
    "source": "사람인",
    "category": "채용공고 리드",
    "title": "[중견 계열사] 마케팅 콘텐츠 디자이너",
-   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54559446&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%84%B0&searchType=search&paid_fl=n&search_uuid=81ddebcf-dd13-48d0-b91c-576d3127553a",
+   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54559446&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%84%B0&searchType=search&paid_fl=n&search_uuid=47ec7869-ed55-421f-bd66-146046fd92b2",
    "company": "(주)우리엔",
    "description": "경기 화성시 경력2년↑ 대졸↑ 정규직",
    "email": "",
@@ -2049,11 +2049,11 @@
    "is_new": true
   },
   {
-   "id": "사람인-cb2e410e46e4",
+   "id": "사람인-22827db273f5",
    "source": "사람인",
    "category": "채용공고 리드",
    "title": "[농심NDS] 클라우드 B2B IT마케팅 계약직(정규직 전환형)",
-   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54559441&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%84%B0&searchType=search&paid_fl=n&search_uuid=81ddebcf-dd13-48d0-b91c-576d3127553a",
+   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54559441&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%84%B0&searchType=search&paid_fl=n&search_uuid=47ec7869-ed55-421f-bd66-146046fd92b2",
    "company": "(주)엔디에스",
    "description": "서울 동작구 경력3년↑ 학력무관 계약직",
    "email": "",
@@ -2063,11 +2063,11 @@
    "is_new": true
   },
   {
-   "id": "사람인-cbf63f097444",
+   "id": "사람인-d12d47dbeb17",
    "source": "사람인",
    "category": "채용공고 리드",
    "title": "AI 숏폼드라마 영상 편집자 모집",
-   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54559434&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%84%B0&searchType=search&paid_fl=n&search_uuid=81ddebcf-dd13-48d0-b91c-576d3127553a",
+   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54559434&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%84%B0&searchType=search&paid_fl=n&search_uuid=47ec7869-ed55-421f-bd66-146046fd92b2",
    "company": "캐디캠퍼스",
    "description": "전북 전주시 완산구 경력무관 학력무관 정규직·계약직",
    "email": "",
@@ -2077,11 +2077,11 @@
    "is_new": true
   },
   {
-   "id": "사람인-79a1b36e58b9",
+   "id": "사람인-3af331c6bbd2",
    "source": "사람인",
    "category": "채용공고 리드",
    "title": "[펫 쉴드]상품 기획 경력 채용",
-   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54559433&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%84%B0&searchType=search&paid_fl=n&search_uuid=81ddebcf-dd13-48d0-b91c-576d3127553a",
+   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54559433&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%84%B0&searchType=search&paid_fl=n&search_uuid=47ec7869-ed55-421f-bd66-146046fd92b2",
    "company": "(주)순녹",
    "description": "서울 성동구 경력 2~5년 학력무관 정규직",
    "email": "",
@@ -2091,11 +2091,11 @@
    "is_new": true
   },
   {
-   "id": "사람인-139645ea67b4",
+   "id": "사람인-8ae8c0e1677e",
    "source": "사람인",
    "category": "채용공고 리드",
    "title": "[Tense] 마케팅 리드",
-   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54559429&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%84%B0&searchType=search&paid_fl=n&search_uuid=81ddebcf-dd13-48d0-b91c-576d3127553a",
+   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54559429&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%84%B0&searchType=search&paid_fl=n&search_uuid=47ec7869-ed55-421f-bd66-146046fd92b2",
    "company": "(주)텐스",
    "description": "서울 강남구 경력 5~10년 학력무관 정규직",
    "email": "",
@@ -2105,11 +2105,11 @@
    "is_new": true
   },
   {
-   "id": "사람인-6ba7e1e77fb8",
+   "id": "사람인-7faf68a0747c",
    "source": "사람인",
    "category": "채용공고 리드",
    "title": "플랫폼/콘텐츠 디자이너",
-   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54559411&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%84%B0&searchType=search&paid_fl=n&search_uuid=81ddebcf-dd13-48d0-b91c-576d3127553a",
+   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54559411&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%84%B0&searchType=search&paid_fl=n&search_uuid=47ec7869-ed55-421f-bd66-146046fd92b2",
    "company": "(주)포플래닛",
    "description": "서울 강남구 경력무관 학력무관 정규직",
    "email": "",
@@ -2119,11 +2119,11 @@
    "is_new": true
   },
   {
-   "id": "사람인-22687bbed0b9",
+   "id": "사람인-31337c0a41cc",
    "source": "사람인",
    "category": "채용공고 리드",
    "title": "[일본사업본부] 일본 인플루언서 마케터",
-   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54559408&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%84%B0&searchType=search&paid_fl=n&search_uuid=81ddebcf-dd13-48d0-b91c-576d3127553a",
+   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54559408&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%84%B0&searchType=search&paid_fl=n&search_uuid=47ec7869-ed55-421f-bd66-146046fd92b2",
    "company": "(주)올리브인터내셔널",
    "description": "서울 서초구 경력 2~5년 학력무관 정규직",
    "email": "",
@@ -2133,11 +2133,11 @@
    "is_new": true
   },
   {
-   "id": "사람인-879d0ded0461",
+   "id": "사람인-179bf6cfd120",
    "source": "사람인",
    "category": "채용공고 리드",
    "title": "[핑거수트] 콘텐츠 마케터 채용 (신입/경력)",
-   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54559404&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%84%B0&searchType=search&paid_fl=n&search_uuid=81ddebcf-dd13-48d0-b91c-576d3127553a",
+   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54559404&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%84%B0&searchType=search&paid_fl=n&search_uuid=47ec7869-ed55-421f-bd66-146046fd92b2",
    "company": "(주)데일리앤코",
    "description": "서울 송파구 경력무관 대졸↑ 정규직",
    "email": "",
@@ -2147,11 +2147,11 @@
    "is_new": true
   },
   {
-   "id": "사람인-c676bfa6981d",
+   "id": "사람인-0d982d0d4b50",
    "source": "사람인",
    "category": "채용공고 리드",
    "title": "[경력]금양리테일 WD 웹엠디 채용 공고",
-   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54559395&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%84%B0&searchType=search&paid_fl=n&search_uuid=81ddebcf-dd13-48d0-b91c-576d3127553a",
+   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54559395&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%84%B0&searchType=search&paid_fl=n&search_uuid=47ec7869-ed55-421f-bd66-146046fd92b2",
    "company": "금양리테일(주)",
    "description": "부산 수영구 경력 초대졸↑ 파트·계약직",
    "email": "",
@@ -2161,11 +2161,11 @@
    "is_new": true
   },
   {
-   "id": "사람인-409782d3d43f",
+   "id": "사람인-fb191faa65ff",
    "source": "사람인",
    "category": "채용공고 리드",
    "title": "[에르고] 콘텐츠 마케터 (에디터)채용",
-   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54559378&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%84%B0&searchType=search&paid_fl=n&search_uuid=81ddebcf-dd13-48d0-b91c-576d3127553a",
+   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54559378&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%84%B0&searchType=search&paid_fl=n&search_uuid=47ec7869-ed55-421f-bd66-146046fd92b2",
    "company": "(주)에르고",
    "description": "서울 마포구 경력무관 학력무관 정규직·인턴직 3,600 만원",
    "email": "",
@@ -2175,11 +2175,11 @@
    "is_new": true
   },
   {
-   "id": "사람인-9a6242731ab2",
+   "id": "사람인-547980074fbc",
    "source": "사람인",
    "category": "채용공고 리드",
    "title": "[티원클리닉] 피부과 병원 마케터 실장&부장님 모십니다",
-   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54559373&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%84%B0&searchType=search&paid_fl=n&search_uuid=81ddebcf-dd13-48d0-b91c-576d3127553a",
+   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54559373&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%84%B0&searchType=search&paid_fl=n&search_uuid=47ec7869-ed55-421f-bd66-146046fd92b2",
    "company": "티원의원",
    "description": "서울 강남구 경력1년↑ 고졸↑ 정규직",
    "email": "",
@@ -2189,11 +2189,11 @@
    "is_new": true
   },
   {
-   "id": "사람인-a8e59452d17b",
+   "id": "사람인-c75929b1d067",
    "source": "사람인",
    "category": "채용공고 리드",
    "title": "[중견 계열사] B2B 마케팅 (세미나·컨퍼런스 기획/운영)",
-   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54559372&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%84%B0&searchType=search&paid_fl=n&search_uuid=81ddebcf-dd13-48d0-b91c-576d3127553a",
+   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54559372&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%84%B0&searchType=search&paid_fl=n&search_uuid=47ec7869-ed55-421f-bd66-146046fd92b2",
    "company": "(주)우리엔",
    "description": "경기 화성시 경력5년↑ 대졸↑ 정규직",
    "email": "",
@@ -2203,11 +2203,11 @@
    "is_new": true
   },
   {
-   "id": "사람인-f38a7b26350d",
+   "id": "사람인-73e58fd16c94",
    "source": "사람인",
    "category": "채용공고 리드",
    "title": "2026 하반기 행사기획·운영 채용 공고 (신입 및 경력)",
-   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54559358&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%84%B0&searchType=search&paid_fl=n&search_uuid=81ddebcf-dd13-48d0-b91c-576d3127553a",
+   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54559358&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%84%B0&searchType=search&paid_fl=n&search_uuid=47ec7869-ed55-421f-bd66-146046fd92b2",
    "company": "청년기획",
    "description": "대구 동구 경력무관 학력무관 정규직",
    "email": "",
@@ -2217,11 +2217,11 @@
    "is_new": true
   },
   {
-   "id": "사람인-6662d4b5d856",
+   "id": "사람인-8362e64d7bcd",
    "source": "사람인",
    "category": "채용공고 리드",
    "title": "브랜드 디렉터",
-   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54559357&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%84%B0&searchType=search&paid_fl=n&search_uuid=81ddebcf-dd13-48d0-b91c-576d3127553a",
+   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54559357&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%84%B0&searchType=search&paid_fl=n&search_uuid=47ec7869-ed55-421f-bd66-146046fd92b2",
    "company": "(주)에이에이씨",
    "description": "서울 강남구 경력10년↑ 대졸↑ 정규직",
    "email": "",
@@ -2231,11 +2231,11 @@
    "is_new": true
   },
   {
-   "id": "사람인-c78eb9733fcf",
+   "id": "사람인-27eb435f517d",
    "source": "사람인",
    "category": "채용공고 리드",
    "title": "[정규직] 유명코스메틱기업 글로벌마케팅 총괄/파트 채용",
-   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54559353&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%84%B0&searchType=search&paid_fl=n&search_uuid=81ddebcf-dd13-48d0-b91c-576d3127553a",
+   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54559353&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%84%B0&searchType=search&paid_fl=n&search_uuid=47ec7869-ed55-421f-bd66-146046fd92b2",
    "company": "(주)키스템프그룹",
    "description": "서울 강남구 경력12년↑ 대졸↑ 정규직",
    "email": "",
@@ -2259,20 +2259,6 @@
    "is_new": true
   },
   {
-   "id": "잡코리아-a206bc0abf46",
-   "source": "잡코리아",
-   "category": "채용공고 리드",
-   "title": "(주)현대지성 출판사 SNS 콘텐츠 마케터 채용",
-   "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/49630381",
-   "company": "",
-   "description": "잡코리아 마케터 채용공고",
-   "email": "",
-   "phone": "",
-   "posted": "",
-   "first_seen": "2026-07-24",
-   "is_new": true
-  },
-  {
    "id": "잡코리아-793131f6982f",
    "source": "잡코리아",
    "category": "채용공고 리드",
@@ -2287,11 +2273,25 @@
    "is_new": true
   },
   {
-   "id": "잡코리아-ff665eaecc4a",
+   "id": "잡코리아-7b265eb94445",
    "source": "잡코리아",
    "category": "채용공고 리드",
-   "title": "그로스/데이터 마케팅 총괄 [업계최고우대]",
-   "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/49641635",
+   "title": "[아이브코리아] 광고 영상 제작 담당 채용 공고 I 경력",
+   "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/49376871",
+   "company": "",
+   "description": "잡코리아 마케터 채용공고",
+   "email": "",
+   "phone": "",
+   "posted": "",
+   "first_seen": "2026-07-24",
+   "is_new": true
+  },
+  {
+   "id": "잡코리아-a206bc0abf46",
+   "source": "잡코리아",
+   "category": "채용공고 리드",
+   "title": "(주)현대지성 출판사 SNS 콘텐츠 마케터 채용",
+   "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/49630381",
    "company": "",
    "description": "잡코리아 마케터 채용공고",
    "email": "",
@@ -2315,11 +2315,25 @@
    "is_new": true
   },
   {
-   "id": "잡코리아-d1e377ce6528",
+   "id": "잡코리아-65dc69c09856",
    "source": "잡코리아",
    "category": "채용공고 리드",
-   "title": "럭셔리 브랜드 홍보 디지털 대행사",
-   "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/49524135",
+   "title": "대만 SNS 마케터 채용 (Meta 광고 운영 / 콘텐츠 제작)",
+   "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/49614499",
+   "company": "",
+   "description": "잡코리아 마케터 채용공고",
+   "email": "",
+   "phone": "",
+   "posted": "",
+   "first_seen": "2026-07-24",
+   "is_new": true
+  },
+  {
+   "id": "잡코리아-55a27d4bf232",
+   "source": "잡코리아",
+   "category": "채용공고 리드",
+   "title": "[앙트레브] 브랜드 MD",
+   "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/49558754",
    "company": "",
    "description": "잡코리아 마케터 채용공고",
    "email": "",
@@ -2334,20 +2348,6 @@
    "category": "채용공고 리드",
    "title": "[아이브코리아] 크리에이터 마케팅 AE 경력 채용 공고",
    "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/49376772",
-   "company": "",
-   "description": "잡코리아 마케터 채용공고",
-   "email": "",
-   "phone": "",
-   "posted": "",
-   "first_seen": "2026-07-24",
-   "is_new": true
-  },
-  {
-   "id": "잡코리아-7b265eb94445",
-   "source": "잡코리아",
-   "category": "채용공고 리드",
-   "title": "[아이브코리아] 광고 영상 제작 담당 채용 공고 I 경력",
-   "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/49376871",
    "company": "",
    "description": "잡코리아 마케터 채용공고",
    "email": "",
@@ -2609,6 +2609,20 @@
    "is_new": true
   },
   {
+   "id": "잡코리아-06f57acc252b",
+   "source": "잡코리아",
+   "category": "채용공고 리드",
+   "title": "주식회사 디포뮬러에서 중국/대만팀 마케터 및 통,번역 인재를 채용합니다",
+   "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/49645797",
+   "company": "",
+   "description": "잡코리아 마케터 채용공고",
+   "email": "",
+   "phone": "",
+   "posted": "",
+   "first_seen": "2026-07-24",
+   "is_new": true
+  },
+  {
    "id": "잡코리아-b34864933e40",
    "source": "잡코리아",
    "category": "채용공고 리드",
@@ -2642,20 +2656,6 @@
    "category": "채용공고 리드",
    "title": "[KT 고객센터 삼송] 정규직 상담사 상시 채용 (전직군/경력직/신입)",
    "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/49649987",
-   "company": "",
-   "description": "잡코리아 마케터 채용공고",
-   "email": "",
-   "phone": "",
-   "posted": "",
-   "first_seen": "2026-07-24",
-   "is_new": true
-  },
-  {
-   "id": "잡코리아-b853110bd44e",
-   "source": "잡코리아",
-   "category": "채용공고 리드",
-   "title": "[KT 고객센터 구로] 정규직 상담사 상시 채용 (전직군/경력직/신입)",
-   "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/49649971",
    "company": "",
    "description": "잡코리아 마케터 채용공고",
    "email": "",
