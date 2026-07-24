@@ -14,7 +14,7 @@ SOURCE = "나라장터"
 CATEGORY = "정부·공공 입찰"
 ENDPOINT = os.environ.get(
     "NARA_API_ENDPOINT",
-    "http://apis.data.go.kr/1230000/ad/BidPublicInfoService/getBidPblancListInfoServc",
+    "http://apis.data.go.kr/1230000/ad/BidPublicInfoService/getBidPblancListInfoServcPPSSrch",
 )
 KEYWORDS = ["광고", "홍보", "마케팅"]
 
