@@ -1,7 +1,9 @@
 # -*- coding: utf-8 -*-
-"""RSS 기반 업계 뉴스: 모비인사이드, 매드타임스"""
+"""RSS 기반 업계 뉴스: 모비인사이드, 매드타임스 (최근 N일 이내만)"""
 import re
 import xml.etree.ElementTree as ET
+from datetime import datetime, timedelta, timezone
+from email.utils import parsedate_to_datetime
 
 from common import get, item
 
@@ -11,6 +13,17 @@ FEEDS = [
     ("매드타임스", "https://www.madtimes.co.kr/rss/allArticle.xml"),
 ]
 TAG_RE = re.compile(r"<[^>]+>")
+RECENT_DAYS = 30
+
+
+def parse_date(pubdate):
+    try:
+        dt = parsedate_to_datetime(pubdate)
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=timezone.utc)
+        return dt, dt.astimezone(timezone(timedelta(hours=9))).strftime("%Y-%m-%d")
+    except Exception:
+        return None, ""
 
 
 def parse_rss(text, source):
@@ -30,13 +43,14 @@ def parse_rss(text, source):
         title = (it.findtext("title") or "").strip()
         link = (it.findtext("link") or "").strip()
         desc = TAG_RE.sub("", it.findtext("description") or "").strip()
-        pub = (it.findtext("pubDate") or "")[:16]
+        pub = (it.findtext("pubDate") or "").strip()
         if title and link:
             items.append((title, link, desc, pub))
     return items
 
 
 def collect():
+    cutoff = datetime.now(timezone.utc) - timedelta(days=RECENT_DAYS)
     all_items, statuses = [], []
     for source, url in FEEDS:
         try:
@@ -44,13 +58,22 @@ def collect():
             if r.status_code != 200:
                 statuses.append(f"{source} HTTP {r.status_code}")
                 continue
-            rows = parse_rss(r.text, source)[:12]
-            for title, link, desc, pub in rows:
+            picked = []
+            for title, link, desc, pub in parse_rss(r.text, source):
+                dt, ymd = parse_date(pub)
+                # 발행일을 읽을 수 있으면 최근 N일만; 못 읽으면 일단 채택
+                if dt is not None and dt < cutoff:
+                    continue
+                picked.append((dt, title, link, desc, ymd))
+            oldest = datetime(1970, 1, 1, tzinfo=timezone.utc)
+            picked.sort(key=lambda x: x[0] or oldest, reverse=True)
+            for dt, title, link, desc, ymd in picked[:12]:
+                head = f"📅 {ymd} · " if ymd else ""
                 all_items.append(item(
                     source, CATEGORY, title=title, url=link,
-                    description=desc[:200], posted=pub,
+                    description=(head + desc)[:200], posted=ymd,
                 ))
-            statuses.append(f"{source} {len(rows)}건")
+            statuses.append(f"{source} {len(picked[:12])}건")
         except Exception as e:
             statuses.append(f"{source} 오류:{type(e).__name__}")
     return all_items, "; ".join(statuses)
