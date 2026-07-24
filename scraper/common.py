@@ -1,11 +1,24 @@
 # -*- coding: utf-8 -*-
 """공통 유틸: HTTP 세션, 아이템 생성, 연락처 추출"""
 import hashlib
+import json
+import os
 import re
 import requests
 import urllib3
 
 urllib3.disable_warnings()
+
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+
+def load_keywords():
+    """저장소 루트 keywords.json 로드 (없으면 빈 dict)"""
+    try:
+        with open(os.path.join(ROOT, "keywords.json"), encoding="utf-8") as f:
+            return json.load(f)
+    except Exception:
+        return {}
 
 UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/126.0 Safari/537.36")

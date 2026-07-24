@@ -1,16 +1,18 @@
 # -*- coding: utf-8 -*-
 """잡코리아 마케터 채용공고 검색"""
+from urllib.parse import quote
+
 from bs4 import BeautifulSoup
 
-from common import get, item
+from common import get, item, load_keywords
 
 SOURCE = "잡코리아"
 CATEGORY = "채용공고 리드"
-SEARCH = "https://www.jobkorea.co.kr/Search/?stext=%EB%A7%88%EC%BC%80%ED%84%B0&ord=RegDtDesc"
 
 
 def collect():
-    r = get(SEARCH)
+    kw = load_keywords().get("채용_검색어", "마케터")
+    r = get(f"https://www.jobkorea.co.kr/Search/?stext={quote(kw)}&ord=RegDtDesc")
     if r.status_code != 200:
         return [], f"오류: HTTP {r.status_code}"
     soup = BeautifulSoup(r.text, "html.parser")

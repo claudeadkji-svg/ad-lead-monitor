@@ -8,7 +8,7 @@ data.go.kr에서 '조달청_나라장터 입찰공고정보서비스' 활용신�
 import os
 from datetime import datetime, timedelta, timezone
 
-from common import get, item
+from common import get, item, load_keywords
 
 SOURCE = "나라장터"
 CATEGORY = "정부·공공 입찰"
@@ -16,7 +16,10 @@ ENDPOINT = os.environ.get(
     "NARA_API_ENDPOINT",
     "http://apis.data.go.kr/1230000/ad/BidPublicInfoService/getBidPblancListInfoServcPPSSrch",
 )
-KEYWORDS = ["광고", "홍보", "마케팅"]
+
+
+def keywords():
+    return load_keywords().get("나라장터_검색어", ["광고", "홍보", "마케팅"])
 
 
 def collect():
@@ -30,7 +33,7 @@ def collect():
     end = now.strftime("%Y%m%d2359")
 
     items, errors = [], []
-    for kw in KEYWORDS:
+    for kw in keywords():
         try:
             r = get(ENDPOINT, params={
                 "serviceKey": key, "pageNo": "1", "numOfRows": "50",

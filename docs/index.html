@@ -39,14 +39,37 @@
       <button id="new-only">신규만 보기</button>
       <button id="dl-sel" class="primary">선택 엑셀 다운로드</button>
       <button id="dl-all">전체 다운로드</button>
+      <button id="settings-btn" title="설정">⚙</button>
       <span class="stat" id="stat"></span>
     </div>
   </header>
 
   <main>
     <div id="sections"></div>
+    <div id="reports"></div>
     <div id="source-status"></div>
   </main>
+
+  <div id="settings" class="modal-wrap" style="display:none">
+    <div class="modal">
+      <h2>⚙ 설정 — 리드 상태 저장</h2>
+      <p>상태(컨택예정/메일발송 등)를 팀 전체에 공유 저장하려면 GitHub 토큰이 필요합니다.</p>
+      <ol>
+        <li>GitHub 로그인 → <b>Settings → Developer settings → Fine-grained tokens → Generate new token</b></li>
+        <li>Repository access: <b>ad-lead-monitor 저장소만</b> 선택</li>
+        <li>Permissions → Contents: <b>Read and write</b></li>
+        <li>생성된 토큰을 아래에 붙여넣기 (이 브라우저에만 저장됩니다)</li>
+      </ol>
+      <label>이름 (기록용)</label>
+      <input type="text" id="set-name" placeholder="예: 홍길동">
+      <label>GitHub 토큰</label>
+      <input type="password" id="set-token" placeholder="github_pat_...">
+      <div class="modal-btns">
+        <button id="set-save" class="primary">저장</button>
+        <button id="set-close">닫기</button>
+      </div>
+    </div>
+  </div>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>

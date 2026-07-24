@@ -28,6 +28,11 @@ jobs:
           SARAMIN_API_KEY: ${{ secrets.SARAMIN_API_KEY }}
         run: python scraper/main.py
 
+      - name: Send summary notification
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        run: python scraper/notify.py
+
       - name: Commit & push data
         run: |
           git config user.name "lead-monitor-bot"

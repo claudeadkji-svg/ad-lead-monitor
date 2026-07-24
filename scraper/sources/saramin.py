@@ -1,20 +1,28 @@
 # -*- coding: utf-8 -*-
 """사람인 마케터 채용공고 검색 (SARAMIN_API_KEY 등록 시 공식 API 사용)"""
 import os
+from urllib.parse import quote
 
 from bs4 import BeautifulSoup
 
-from common import get, item
+from common import get, item, load_keywords
 
 SOURCE = "사람인"
 CATEGORY = "채용공고 리드"
-SEARCH = ("https://www.saramin.co.kr/zf_user/search/recruit"
-          "?searchword=%EB%A7%88%EC%BC%80%ED%84%B0&recruitSort=reg_dt&recruitPageCount=40")
 API = "https://oapi.saramin.co.kr/job-search"
 
 
+def job_keyword():
+    return load_keywords().get("채용_검색어", "마케터")
+
+
+def search_url():
+    return ("https://www.saramin.co.kr/zf_user/search/recruit"
+            f"?searchword={quote(job_keyword())}&recruitSort=reg_dt&recruitPageCount=40")
+
+
 def collect_api(key):
-    r = get(API, params={"access-key": key, "keywords": "마케터", "sr": "directhire",
+    r = get(API, params={"access-key": key, "keywords": job_keyword(), "sr": "directhire",
                          "count": "40", "sort": "pd"},
             headers={"Accept": "application/json"})
     jobs = r.json().get("jobs", {}).get("job", [])
@@ -32,7 +40,7 @@ def collect_api(key):
 
 
 def collect_scrape():
-    r = get(SEARCH)
+    r = get(search_url())
     if r.status_code != 200:
         return [], f"오류: HTTP {r.status_code}"
     soup = BeautifulSoup(r.text, "html.parser")
