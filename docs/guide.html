@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>AD LEAD MONITOR — 사용법 가이드</title>
+<script src="config.js"></script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"Malgun Gothic","맑은 고딕",sans-serif;background:#141416;color:#eaeaec;line-height:1.7}
+a{color:#6db3ff}
+.top{background:#0d0d0f;border-bottom:2px solid #a6192e;padding:14px 24px;position:sticky;top:0;z-index:10}
+.top h1{font-size:17px;letter-spacing:1px}.top h1 span{color:#a6192e}
+.top .sub{color:#9a9aa0;font-size:12px;margin-left:10px}
+.wrap{max-width:1080px;margin:0 auto;padding:28px 20px 80px}
+h2{font-size:19px;margin:44px 0 6px;padding-bottom:8px;border-bottom:1px solid #343438}
+h2:first-of-type{margin-top:10px}
+h3{font-size:15px;margin:22px 0 6px;color:#ffd08a}
+p,li{font-size:14px;color:#cfcfd4}
+ul,ol{padding-left:22px;margin:8px 0}
+img{max-width:100%;border:1px solid #343438;border-radius:8px;margin:14px 0;display:block}
+.num{display:inline-block;width:22px;height:22px;border-radius:50%;background:#ff3b30;color:#fff;font-weight:700;font-size:13px;line-height:22px;text-align:center;margin-right:6px}
+.step{background:#1d1d20;border:1px solid #343438;border-left:3px solid #a6192e;border-radius:6px;padding:14px 18px;margin:12px 0}
+.tip{background:#16211a;border:1px solid #2a4a35;border-radius:6px;padding:12px 16px;margin:12px 0;font-size:13px}
+.warn{background:#241a1a;border:1px solid #4a2a2a;border-radius:6px;padding:12px 16px;margin:12px 0;font-size:13px}
+table{border-collapse:collapse;width:100%;margin:12px 0;font-size:13px}
+th,td{border:1px solid #343438;padding:8px 12px;text-align:left}
+th{background:#1d1d20;white-space:nowrap}
+code{background:#26262a;padding:1px 6px;border-radius:4px;font-size:12.5px}
+.toc{background:#1d1d20;border:1px solid #343438;border-radius:8px;padding:16px 22px;margin:18px 0}
+.toc li{margin:3px 0}
+#gate{position:fixed;inset:0;z-index:100;background:#141416;display:flex;align-items:center;justify-content:center}
+#gate .box{background:#1d1d20;border:1px solid #343438;border-top:3px solid #a6192e;padding:38px 42px;border-radius:8px;text-align:center;width:330px}
+#gate input{width:100%;padding:10px;border-radius:4px;border:1px solid #343438;background:#141416;color:#eaeaec;font-size:14px;margin:14px 0 10px}
+#gate button{width:100%;padding:10px;border:0;border-radius:4px;background:#a6192e;color:#fff;font-weight:700;font-size:14px;cursor:pointer}
+</style>
+</head>
+<body>
+
+<div id="gate">
+  <div class="box">
+    <div style="font-size:18px;letter-spacing:1px">AD <span style="color:#a6192e">LEAD</span> MONITOR 가이드</div>
+    <input type="password" id="pw" placeholder="팀 공용 비밀번호">
+    <button id="pw-btn">접속</button>
+    <div id="pw-err" style="color:#ff8080;font-size:12px;margin-top:8px;min-height:15px"></div>
+  </div>
+</div>
+
+<div class="top"><h1>AD <span>LEAD</span> MONITOR <span class="sub">팀원용 사용법 가이드</span></h1></div>
+<div class="wrap">
+
+<div class="toc">
+  <b>목차</b>
+  <ol>
+    <li><a href="#s1">이 도구는 무엇인가요?</a></li>
+    <li><a href="#s2">접속과 로그인</a></li>
+    <li><a href="#s3">대시보드 화면 구성 — 어디를 누르면 무엇이 나오나</a></li>
+    <li><a href="#s4">아침 확인 루틴 (추천 워크플로)</a></li>
+    <li><a href="#s5">화면 하단 — 주간 리포트와 수집 상태</a></li>
+    <li><a href="#s6">수집 소스 안내 (신규: 브랜드브리프)</a></li>
+    <li><a href="#s7">자주 묻는 질문</a></li>
+  </ol>
+</div>
+
+<h2 id="s1">1. 이 도구는 무엇인가요?</h2>
+<p>신규 광고주·대행사 영업 리드를 <b>매일 아침 06:30(KST)에 자동 수집</b>해 한 화면에 모아주는 팀 공용 대시보드입니다.
+정부·공공 입찰(나라장터), 마케팅 채용공고(사람인·잡코리아·링크드인), 업계 뉴스(협회·전문지·구글뉴스) 등을 훑어서
+"광고를 시작하려는 회사" 신호를 잡아냅니다. 별도 설치 없이 브라우저에서 접속만 하면 됩니다.</p>
+
+<h2 id="s2">2. 접속과 로그인</h2>
+<div class="step">
+  <p>주소: <a href="https://claudeadkji-svg.github.io/ad-lead-monitor/" target="_blank">https://claudeadkji-svg.github.io/ad-lead-monitor/</a> (사내 위키/북마크에 저장해 두세요)</p>
+</div>
+<img src="guide/login.png" alt="로그인 화면">
+<ul>
+  <li><span class="num">1</span><b>비밀번호 입력칸</b> — 팀 공용 비밀번호를 입력합니다. 비밀번호는 팀 리더에게 문의하세요.</li>
+  <li><span class="num">2</span><b>접속 버튼</b> — 클릭하면 바로 대시보드가 열립니다. (Enter 키도 동작)</li>
+</ul>
+<p>로그인은 브라우저 탭을 닫기 전까지 유지됩니다. 탭을 새로 열면 다시 입력해야 합니다.</p>
+
+<h2 id="s3">3. 대시보드 화면 구성</h2>
+<p>로그인하면 아래 화면이 나옵니다. 리드는 카테고리별 표로 정리되며, <b style="color:#ffd08a">노란 배경 + NEW 배지</b>가 붙은 행이 <b>오늘 처음 발견된 신규 리드</b>입니다.</p>
+<img src="guide/dash.png" alt="대시보드 화면">
+<table>
+  <tr><th>번호</th><th>이름</th><th>클릭하면 / 입력하면</th></tr>
+  <tr><td><span class="num">1</span></td><td>조회 날짜</td><td>과거 날짜를 선택하면 그날 수집된 스냅샷을 그대로 다시 볼 수 있습니다. 기본은 최신.</td></tr>
+  <tr><td><span class="num">2</span></td><td>카테고리 필터</td><td>"정부·공공 입찰", "채용공고 리드" 등 한 카테고리만 골라 봅니다.</td></tr>
+  <tr><td><span class="num">3</span></td><td>소스 필터</td><td>나라장터·사람인·매드타임스 등 수집처 하나만 골라 봅니다. <b>이번에 "브랜드브리프"가 추가</b>되었습니다.</td></tr>
+  <tr><td><span class="num">4</span></td><td>검색창</td><td>제목·거래처·내용에서 입력한 단어를 실시간으로 찾습니다. 예: "게임", "화장품".</td></tr>
+  <tr><td><span class="num">5</span></td><td>신규만 보기</td><td>한 번 누르면 오늘 신규(NEW)만 남습니다. 다시 누르면 전체 표시로 복귀.</td></tr>
+  <tr><td><span class="num">6</span></td><td>선택 엑셀 다운로드</td><td>체크박스(⑧)로 고른 리드만 엑셀(.xlsx) 파일로 내려받습니다.</td></tr>
+  <tr><td><span class="num">7</span></td><td>전체 다운로드</td><td>현재 필터·검색 조건에 보이는 항목 전부를 엑셀로 내려받습니다.</td></tr>
+  <tr><td><span class="num">8</span></td><td>행 체크박스</td><td>다운로드할 리드를 고릅니다. 표 머리글의 체크박스를 누르면 그 카테고리 전체가 선택됩니다.</td></tr>
+</table>
+<h3>표 안에서 알아두면 좋은 것</h3>
+<ul>
+  <li><b>제목 클릭</b> → 원문(공고·기사·채용공고)이 새 탭으로 열립니다.</li>
+  <li><b>연락처 열</b> → 수집된 이메일·전화번호가 있으면 바로 클릭해 메일/전화 연결. 없으면 <b>🔍 연락처 찾기</b>를 누르세요 — 거래처 대표번호 네이버 검색이 새 탭으로 열립니다.</li>
+  <li><b>최초 등록</b> → 이 리드가 처음 발견된 날짜입니다. 오래 남아있는 공고인지 판단할 때 참고하세요.</li>
+</ul>
+
+<h2 id="s4">4. 아침 확인 루틴 (추천 워크플로)</h2>
+<div class="step">
+<ol>
+  <li>출근 후 접속 → 상단 오른쪽 "오늘 신규 N건" 숫자 확인</li>
+  <li><span class="num">5</span><b>신규만 보기</b> 클릭 → 오늘 새로 잡힌 리드만 훑어보기</li>
+  <li>영업 가치가 있는 리드에 <span class="num">8</span><b>체크</b></li>
+  <li><span class="num">6</span><b>선택 엑셀 다운로드</b> → 담당자별로 배분하거나 CRM에 붙여넣기</li>
+</ol>
+</div>
+<div class="tip">💡 매일 06:30 수집이므로 아침 7시 이후 접속하면 항상 당일 데이터가 준비되어 있습니다. 슬랙 연동이 설정된 경우 아침 요약 메시지도 함께 옵니다.</div>
+
+<h2 id="s5">5. 화면 하단 — 주간 리포트와 수집 상태</h2>
+<p>대시보드를 끝까지 내리면 두 개의 관리용 블록이 있습니다.</p>
+<img src="guide/bottom.png" alt="하단 화면">
+<ul>
+  <li><span class="num">1</span><b>주간 엑셀 리포트</b> — 매주 월요일 07:00에 지난 한 주 리드를 묶은 엑셀 파일이 자동 생성됩니다. 링크를 누르면 바로 다운로드됩니다. 주간 회의 자료로 쓰세요.</li>
+  <li><span class="num">2</span><b>소스별 수집 상태</b> — 오늘 각 수집처가 몇 건을 가져왔는지, 오류가 없었는지 보여줍니다. "오류"나 "HTTP 403" 같은 문구가 이틀 이상 계속되면 관리 담당자에게 알려주세요. (원티드의 HTTP 403은 알려진 제약으로, 로컬 수집분으로 보완됩니다.)</li>
+</ul>
+
+<h2 id="s6">6. 수집 소스 안내 (신규: 브랜드브리프)</h2>
+<table>
+  <tr><th>카테고리</th><th>소스</th><th>무엇이 잡히나</th></tr>
+  <tr><td>정부·공공 입찰</td><td>나라장터</td><td>광고·홍보 용역 입찰 공고 (마감일 포함)</td></tr>
+  <tr><td>채용공고 리드</td><td>사람인 · 잡코리아 · 링크드인</td><td>마케팅/광고 담당자를 뽑기 시작한 회사 = 광고 예산이 생긴 신호</td></tr>
+  <tr><td>업계 협회·뉴스</td><td>한국디지털광고협회 · 모비인사이드 · 매드타임스 · <b style="color:#ffd08a">브랜드브리프 (NEW)</b></td><td>대행사 선정, 신규 캠페인, 업계 동향 기사</td></tr>
+  <tr><td>기타 뉴스 리드</td><td>구글뉴스 키워드 8종</td><td>"대행사 선정" "브랜드 론칭" 등 키워드에 걸린 기사</td></tr>
+  <tr><td>수동 등록</td><td>manual.json</td><td>팀이 직접 추가한 리드 (GitHub에서 <code>docs/data/manual.json</code> 편집)</td></tr>
+</table>
+<div class="tip">💡 <b>이번 업데이트:</b> 광고 전문지 <b>브랜드브리프(brandbrief.co.kr)</b>가 업계 뉴스 소스로 추가되었습니다. 다음 아침 수집(06:30)부터 "업계 협회·뉴스" 카테고리에 기사가 들어오고, 소스 필터(③)에서 "브랜드브리프"만 골라 볼 수 있습니다.</div>
+
+<h2 id="s7">7. 자주 묻는 질문</h2>
+<h3>Q. 접속했는데 데이터가 안 보여요</h3>
+<p>새로고침(F5) 후 다시 로그인해 보세요. 그래도 "데이터 로드 실패"가 나오면 관리 담당자에게 알려주세요.</p>
+<h3>Q. 어제 본 리드가 오늘 안 보여요</h3>
+<p>날짜 선택(①)에서 어제 날짜를 고르면 어제 스냅샷 그대로 볼 수 있습니다. 입찰 공고는 마감되면 다음 수집에서 빠질 수 있습니다.</p>
+<h3>Q. 리드를 직접 추가하고 싶어요</h3>
+<p>GitHub 저장소의 <code>docs/data/manual.json</code>에 항목을 추가하면 다음 수집 때 "수동 등록" 카테고리로 표시됩니다. 편집 권한은 관리 담당자에게 요청하세요.</p>
+<h3>Q. 수집 키워드를 바꾸고 싶어요</h3>
+<p>구글뉴스 키워드는 저장소의 <code>keywords.json</code>에서 관리합니다. 추가/삭제 요청은 관리 담당자에게 전달해 주세요.</p>
+
+</div>
+<script>
+(function(){
+  var CFG=window.SITE_CONFIG||{};
+  function sha(s){return crypto.subtle.digest("SHA-256",new TextEncoder().encode(s)).then(function(b){return Array.prototype.map.call(new Uint8Array(b),function(x){return x.toString(16).padStart(2,"0")}).join("")})}
+  function go(){sha(document.getElementById("pw").value).then(function(h){if(h===CFG.PASSWORD_HASH){sessionStorage.setItem("alm_auth",h);document.getElementById("gate").style.display="none";}else{document.getElementById("pw-err").textContent="비밀번호가 올바르지 않습니다.";}})}
+  document.getElementById("pw-btn").addEventListener("click",go);
+  document.getElementById("pw").addEventListener("keydown",function(e){if(e.key==="Enter")go();});
+  if(sessionStorage.getItem("alm_auth")===CFG.PASSWORD_HASH)document.getElementById("gate").style.display="none";
+})();
+</script>
+</body>
+</html>

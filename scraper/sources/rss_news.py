@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""RSS 기반 업계 뉴스: 모비인사이드, 매드타임스 (최근 N일 이내만)"""
+"""RSS 기반 업계 뉴스: 모비인사이드, 매드타임스, 브랜드브리프 (최근 N일 이내만)"""
 import re
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
@@ -11,6 +11,7 @@ CATEGORY = "업계 협회·뉴스"
 FEEDS = [
     ("모비인사이드", "https://www.mobiinside.co.kr/feed/"),
     ("매드타임스", "https://www.madtimes.co.kr/rss/allArticle.xml"),
+    ("브랜드브리프", "https://www.brandbrief.co.kr/rss/allArticle.xml"),
 ]
 TAG_RE = re.compile(r"<[^>]+>")
 RECENT_DAYS = 30
