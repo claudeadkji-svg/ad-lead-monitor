@@ -1,30 +1,6 @@
 {
- "updated": "2026-07-28 06:00",
+ "updated": "2026-07-29 06:00",
  "items": [
-  {
-   "id": "나라장터-99671e8dc4cc",
-   "source": "나라장터",
-   "category": "정부·공공 입찰",
-   "title": "2027학년도 신입생모집 진학어플라이 배너광고",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01641629&bidPbancOrd=000",
-   "company": "서일대학",
-   "description": "수요기관: 서일대학 / 마감: 2026-07-29 10:00:00",
-   "email": "",
-   "phone": "02-490-7252",
-   "posted": "2026-07-21"
-  },
-  {
-   "id": "나라장터-005268107054",
-   "source": "나라장터",
-   "category": "정부·공공 입찰",
-   "title": "2027학년도 신입생모집 유웨이어플라이 배너광고",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01641691&bidPbancOrd=000",
-   "company": "서일대학",
-   "description": "수요기관: 서일대학 / 마감: 2026-07-29 10:00:00",
-   "email": "",
-   "phone": "02-490-7252",
-   "posted": "2026-07-21"
-  },
   {
    "id": "나라장터-9132fa14ab19",
    "source": "나라장터",
@@ -96,102 +72,6 @@
    "email": "",
    "phone": "041-530-2193",
    "posted": "2026-07-27"
-  },
-  {
-   "id": "나라장터-060806814e7e",
-   "source": "나라장터",
-   "category": "정부·공공 입찰",
-   "title": "경운대학교 경북전략산업 앵커대학 사업 홍보를 위한 지역 방송 특집 프로그램 제작",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01641211&bidPbancOrd=000",
-   "company": "경운대학교",
-   "description": "수요기관: 경운대학교 / 마감: 2026-08-03 12:00:00",
-   "email": "",
-   "phone": "054-479-1046",
-   "posted": "2026-07-21"
-  },
-  {
-   "id": "나라장터-0e4fb6519601",
-   "source": "나라장터",
-   "category": "정부·공공 입찰",
-   "title": "에기평 기관 홍보영상 및 캐릭터 제작",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01641492&bidPbancOrd=000",
-   "company": "한국에너지기술평가원",
-   "description": "수요기관: 한국에너지기술평가원 / 마감: 2026-08-04 11:00:00",
-   "email": "",
-   "phone": "",
-   "posted": "2026-07-21"
-  },
-  {
-   "id": "나라장터-c574bbe9ccb1",
-   "source": "나라장터",
-   "category": "정부·공공 입찰",
-   "title": "2026 유소년스포츠기반구축사업 베이스볼5 찾아가는 홍보 강습회 컨텐츠 제작 업체 선정",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01642208&bidPbancOrd=000",
-   "company": "사단법인 대한야구소프트볼협회",
-   "description": "수요기관: 사단법인 대한야구소프트볼협회 / 마감: 2026-08-04 15:00:00",
-   "email": "",
-   "phone": "***********",
-   "posted": "2026-07-21"
-  },
-  {
-   "id": "나라장터-0fdc52e665b4",
-   "source": "나라장터",
-   "category": "정부·공공 입찰",
-   "title": "2026년 국방일보 보도 사진전 제작 홍보 용역",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01639130&bidPbancOrd=000",
-   "company": "국방부 국방홍보원",
-   "description": "수요기관: 국방부 국방홍보원 / 마감: 2026-08-03 10:00:00",
-   "email": "",
-   "phone": "02-2079-3152",
-   "posted": "2026-07-21"
-  },
-  {
-   "id": "나라장터-632ff141263e",
-   "source": "나라장터",
-   "category": "정부·공공 입찰",
-   "title": "2026 통영메이드 공예 하이엔드 홍보 및 유통 지원 용역",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01642347&bidPbancOrd=000",
-   "company": "재단법인통영문화재단",
-   "description": "수요기관: 재단법인통영문화재단 / 마감: 2026-08-11 17:00:00",
-   "email": "",
-   "phone": "055-640-5600",
-   "posted": "2026-07-21"
-  },
-  {
-   "id": "나라장터-b8a2a7f88a1f",
-   "source": "나라장터",
-   "category": "정부·공공 입찰",
-   "title": "차세대융합기술연구원 기관 홍보 영상 제작 용역",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01642493&bidPbancOrd=000",
-   "company": "재단법인 차세대융합기술연구원",
-   "description": "수요기관: 재단법인 차세대융합기술연구원 / 마감:",
-   "email": "",
-   "phone": "031-888-9008",
-   "posted": "2026-07-21"
-  },
-  {
-   "id": "나라장터-35b1b5378729",
-   "source": "나라장터",
-   "category": "정부·공공 입찰",
-   "title": "2026년 지식재산 보호 SNS 운영 및 콘텐츠 제작 홍보용역",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01642766&bidPbancOrd=000",
-   "company": "한국지식재산보호원",
-   "description": "수요기관: 한국지식재산보호원 / 마감: 2026-08-03 10:00:00",
-   "email": "",
-   "phone": "02-2183-5817",
-   "posted": "2026-07-21"
-  },
-  {
-   "id": "나라장터-f46de04568e9",
-   "source": "나라장터",
-   "category": "정부·공공 입찰",
-   "title": "2026년 로컬브랜드 핵심점포 네트워킹 및 홍보",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01643109&bidPbancOrd=000",
-   "company": "서울신용보증재단",
-   "description": "수요기관: 서울신용보증재단 / 마감: 2026-08-03 10:00:00",
-   "email": "",
-   "phone": "02-2174-5117",
-   "posted": "2026-07-21"
   },
   {
    "id": "나라장터-6ab6ed0afac3",
@@ -602,40 +482,52 @@
    "posted": "2026-07-27"
   },
   {
-   "id": "나라장터-842d9096a6e2",
+   "id": "나라장터-1e53cdae446a",
    "source": "나라장터",
    "category": "정부·공공 입찰",
-   "title": "AI기반 임상사진 자동관리 솔루션 해외시장 글로벌 디지털 마케팅_중국",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01627954&bidPbancOrd=000",
-   "company": "캐논코리아(주)",
-   "description": "수요기관: 캐논코리아(주) / 마감: 2026-08-03 18:00:00",
+   "title": "(재공고) 2026 경남 관광 아카데미 및 홍보단 운영 용역",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01653185&bidPbancOrd=000",
+   "company": "재단법인 경상남도 관광재단",
+   "description": "수요기관: 재단법인 경상남도 관광재단 / 마감:",
    "email": "",
-   "phone": "02-2191-8527",
-   "posted": "2026-07-21"
+   "phone": "055-212-6854",
+   "posted": "2026-07-28"
   },
   {
-   "id": "나라장터-a247b5beefc3",
+   "id": "나라장터-baa0f72316df",
    "source": "나라장터",
    "category": "정부·공공 입찰",
-   "title": "AI기반 임상사진 자동관리 솔루션 해외시장 글로벌 디지털 마케팅_홍콩",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01642678&bidPbancOrd=000",
-   "company": "캐논코리아(주)",
-   "description": "수요기관: 캐논코리아(주) / 마감: 2026-08-03 18:00:00",
+   "title": "창업도시 글로벌 홍보행사 위탁운영",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01645852&bidPbancOrd=000",
+   "company": "창업진흥원",
+   "description": "수요기관: 창업진흥원 / 마감: 2026-08-14 15:00:00",
    "email": "",
-   "phone": "02-2191-8527",
-   "posted": "2026-07-21"
+   "phone": "044-410-1612",
+   "posted": "2026-07-28"
   },
   {
-   "id": "나라장터-238ebd96b01c",
+   "id": "나라장터-fc8114923b84",
    "source": "나라장터",
    "category": "정부·공공 입찰",
-   "title": "2026년 디지털 마케팅 실무마스터 과정 교육 운영 용역",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01629376&bidPbancOrd=001",
-   "company": "국립경국대학교",
-   "description": "수요기관: 국립경국대학교 / 마감: 2026-07-31 14:00:00",
+   "title": "2026년 전국(장애인)체전 홍보관 설치, 운영 및 임차 용역",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01655112&bidPbancOrd=000",
+   "company": "제주특별자치도",
+   "description": "수요기관: 제주특별자치도 / 마감: 2026-08-03 10:00:00",
    "email": "",
-   "phone": "054-820-7378",
-   "posted": "2026-07-21"
+   "phone": "064-710-6598",
+   "posted": "2026-07-28"
+  },
+  {
+   "id": "나라장터-3988f7e67055",
+   "source": "나라장터",
+   "category": "정부·공공 입찰",
+   "title": "물자표적에 대한 위력/효과도 분석모델 SW 홍보영상 제작",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01635499&bidPbancOrd=001",
+   "company": "국방과학연구소",
+   "description": "수요기관: 국방과학연구소 / 마감: 2026-08-06 10:00:00",
+   "email": "",
+   "phone": "",
+   "posted": "2026-07-28"
   },
   {
    "id": "나라장터-27fedba3b525",
@@ -708,6 +600,18 @@
    "email": "",
    "phone": "042-868-3757",
    "posted": "2026-07-24"
+  },
+  {
+   "id": "나라장터-dc26bb032f05",
+   "source": "나라장터",
+   "category": "정부·공공 입찰",
+   "title": "제주기업 해외 유통채널 진출·운영 및 마케팅 대행 용역",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01653774&bidPbancOrd=000",
+   "company": "(재)제주테크노파크",
+   "description": "수요기관: (재)제주테크노파크 / 마감: 2026-08-10 14:00:00",
+   "email": "",
+   "phone": "064-720-3099",
+   "posted": "2026-07-28"
   }
  ]
 }
